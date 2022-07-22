@@ -1,0 +1,58 @@
+﻿@using System.Collections.Specialized
+@using System.Configuration
+@using System.Web.Mvc
+@using ATR.Common.Extensions
+@using ATR.Common.Models
+@model ATR.Common.Models.HeaderViewModel
+
+@{
+    Layout = null;
+
+    // Get the display section in app Settings
+    NameValueCollection urlSettings = ConfigurationManager.GetSection("urls") as NameValueCollection;
+    string cdnBaseUrl = urlSettings["CDN"];
+    string appVersionNumber = ("V" + typeof(MvcApplication).Assembly.GetName().Version).GetSubGroups('.', 3);
+    UserSessionModel user = (UserSessionModel)this.Session["CurrentUser"];
+    string userName = string.Empty;
+    if (user != null)
+    {
+        userName = string.Concat(user.FirstName[0], ". ", user.LastName);
+        userName = string.Format("{0} {1}", user.FirstName, user.LastName);
+    }
+}
+
+<!-- Start script for Quadran statistic's purpose -->
+<script type="text/javascript"> var QWA = {}; QWA.startTime = new Date().getTime();</script>
+<!-- End script for Quadran statistic's purpose -->
+
+<div class="header">
+    <div class="row">
+        <div class="col-1">
+            <a href="@urlSettings["ATRactivePortal"]">
+                <img alt="ATR Active" class="logo-atractive" title="@appVersionNumber" src="@string.Concat(cdnBaseUrl, "/ATR/images/logo_ATR_Active.png")">
+            </a>
+        </div>
+        <div class="col-11">
+            <div class="form-row align-items-center justify-content-end header-user">
+                <div class="col-auto">Welcome @userName |</div>
+                <div class="col-auto">
+                    @foreach (MENUS menuIcon in Model.ListMenusIcons)
+                    {
+                        <a href="@menuIcon.URL_MENU" title="@menuIcon.LABEL_MENU"><i class="fa @menuIcon.CODE_MENU" aria-hidden="true"></i></a>
+                    }
+                </div>
+            </div>
+            <div class="form-row align-items-end text-center header-menu">
+                @foreach (MENUS menu in Model.ListMenus)
+                {
+                    <div class="col nav-link" id="@menu.CODE_MENU">
+                        <a href="@menu.URL_MENU">@menu.LABEL_MENU</a>
+                    </div>
+                }
+                <div class="col nav-link requestATR" id="@Model.MenuCRMPortal.CODE_MENU">
+                    <a href="@Model.MenuCRMPortal.URL_MENU">@Model.MenuCRMPortal.LABEL_MENU</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

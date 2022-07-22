@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="checkErrorLastAdmin" xml:space="preserve">
+    <value>Unable to check if the user is the last administrator of his entity</value>
+    <comment>Custom error message when checking if the user is the last administrator of his entity</comment>
+  </data>
+  <data name="dataDeleteEntityNewApplicationUsedError" xml:space="preserve">
+    <value>Error deleting the {0}, some users are still attached to this application</value>
+    <comment>Custom error message when removing a entity new application still used by some users</comment>
+  </data>
+  <data name="dataDeleteError" xml:space="preserve">
+    <value>Unable to delete the {0}</value>
+    <comment>Data name in parameter</comment>
+  </data>
+  <data name="dataDeleteErrorEntityUsers" xml:space="preserve">
+    <value>Failed to delete Entity: some users still belong to this entity</value>
+    <comment>Custom error message when an entity is deleted and still have users</comment>
+  </data>
+  <data name="dataDeleteLastEntityAdministrator" xml:space="preserve">
+    <value>This is the last user administrator of his entity. Are you sure to delete this user?</value>
+    <comment>Custom error message when the last administrator of an entity is about to be deleted</comment>
+  </data>
+  <data name="dataDeleteSuccess" xml:space="preserve">
+    <value>{0} deleted with success</value>
+    <comment>Data name in parameter</comment>
+  </data>
+  <data name="dataDeleteUserSuccess" xml:space="preserve">
+    <value>User successfully deleted from database</value>
+    <comment>Custom error message when a user is removed from database and from AD</comment>
+  </data>
+  <data name="dataErrorEntityBusinessTypeNone" xml:space="preserve">
+    <value>The Business Type must be different than NONE</value>
+    <comment>Custom error message when an entity is set with the business type "NONE"</comment>
+  </data>
+  <data name="dataErrorEntityBusinessTypeValidityEndDate" xml:space="preserve">
+    <value>If the Business Type is Prospect, the validity end date must be filled</value>
+    <comment>Custom error message when an entity is set with the business type to "PROSPECT" and there is no validity end date</comment>
+  </data>
+  <data name="dataErrorEntityCrmCode" xml:space="preserve">
+    <value>Unable to update the Entity. CRM code already used</value>
+    <comment>Custom error message when an entity already have the same CRM Code</comment>
+  </data>
+  <data name="dataErrorEntityName" xml:space="preserve">
+    <value>Unable to update the Entity. The company name is already used</value>
+    <comment>Custom error message when an entity already have the same company name</comment>
+  </data>
+  <data name="dataErrorFrequencyNotSelected" xml:space="preserve">
+    <value>Frequency must be selected if a notification is checked</value>
+    <comment>Custom error message when a notification is selected but no frequency</comment>
+  </data>
+  <data name="dataErrorUserAccessRightsInteractionWithATR" xml:space="preserve">
+    <value>Interact with ATR access is allowed only if the user have My Requests Status Access</value>
+    <comment>Custom error message when inserting Interaction with ATR access is set while My Request Status access is not</comment>
+  </data>
+  <data name="dataErrorUserLastAdmin" xml:space="preserve">
+    <value>Unable to remove the last user administrator of the Entity</value>
+    <comment>Custom error message when a user is no longer administrator of an entity and it was the last administrator of this entity</comment>
+  </data>
+  <data name="dataImageUploadFormatError" xml:space="preserve">
+    <value>The uploaded image must have a .jpg, .jpeg or .png format</value>
+    <comment>Error message for incorrect uploaded image format</comment>
+  </data>
+  <data name="dataImageUploadSizeError" xml:space="preserve">
+    <value>Please select a file smaller than 16 Ko</value>
+    <comment>Error message for incorrect uploaded image size</comment>
+  </data>
+  <data name="dataIncorrectEmail" xml:space="preserve">
+    <value>The Email address is incorrect</value>
+    <comment>Error message for email address incorrect format</comment>
+  </data>
+  <data name="dataIncorrectPhoneNumber" xml:space="preserve">
+    <value>The {0} is incorrect</value>
+    <comment>Error message for Phone / Fax number incorrect format</comment>
+  </data>
+  <data name="dataInsertError" xml:space="preserve">
+    <value>Failed to insert the {0}</value>
+    <comment>Data name in parameter</comment>
+  </data>
+  <data name="dataInsertErrorEntityApplicationAccess" xml:space="preserve">
+    <value>Failed to insert the {0}: Entity must have My Request Status Access before adding Interaction With ATR access</value>
+    <comment>Custom error message when inserting Interaction with ATR access is set before adding My Request Status access</comment>
+  </data>
+  <data name="dataInsertErrorEntityWarehouse" xml:space="preserve">
+    <value>Failed to insert the {0}: No checkbox selected</value>
+    <comment>Custom error message when inserting an entity warehouse without checking any checkboxes</comment>
+  </data>
+  <data name="dataInsertErrorUserAD" xml:space="preserve">
+    <value>Unable to create the user account in the AD. Unable to update user.</value>
+    <comment>Custom error message when adding a user in Active directory</comment>
+  </data>
+  <data name="dataInsertSuccess" xml:space="preserve">
+    <value>{0} inserted with success</value>
+    <comment>Data name in parameter</comment>
+  </data>
+  <data name="dataLengthError" xml:space="preserve">
+    <value>{0} cannot be longer than {1} characters</value>
+    <comment>Data name and length in parameters</comment>
+  </data>
+  <data name="dataLoadError" xml:space="preserve">
+    <value>Unable to load {0}</value>
+    <comment>Data name in parameter</comment>
+  </data>
+  <data name="dataMandatoryFrequencyError" xml:space="preserve">
+    <value>The Frequency is required if a Notification is selected</value>
+    <comment>Custom error message when selecting a notification for the user new application but no frequency</comment>
+  </data>
+  <data name="dataNotFoundError" xml:space="preserve">
+    <value>cannot find the {0} (id={1}) in the database</value>
+    <comment>Date name and data id in parameters</comment>
+  </data>
+  <data name="dataRequiredError" xml:space="preserve">
+    <value>The {0} is required</value>
+    <comment>Data name in parameter</comment>
+  </data>
+  <data name="dataUpdateError" xml:space="preserve">
+    <value>Unable to update the {0}</value>
+    <comment>Data name in parameter</comment>
+  </data>
+  <data name="dataUpdateErrorEntityApplicationAccess" xml:space="preserve">
+    <value>Unabled to update the {0}: Entity must have My Request Status Access before adding Interaction With ATR access</value>
+    <comment>Custom error message when updating Interaction with ATR access is set before adding My Request Status access</comment>
+  </data>
+  <data name="dataUpdateErrorEntityUserAdmin" xml:space="preserve">
+    <value>Unable to update the {0}: No user admin is set, cannot edit the entity</value>
+    <comment>Custom error message when updating an entity that doesn't have admin users</comment>
+  </data>
+  <data name="dataUpdateSuccess" xml:space="preserve">
+    <value>{0} updated with success</value>
+    <comment>Data name in parameter</comment>
+  </data>
+  <data name="empty" xml:space="preserve">
+    <value>{0} is empty</value>
+    <comment>Name in parameter</comment>
+  </data>
+  <data name="formInsertError" xml:space="preserve">
+    <value>Error getting add form for new {0}</value>
+    <comment>Data name in parameter</comment>
+  </data>
+  <data name="formUpdateError" xml:space="preserve">
+    <value>Error getting edit form for new {0} (id={1})</value>
+    <comment>Date name and data id in parameters</comment>
+  </data>
+  <data name="modelNotValid" xml:space="preserve">
+    <value>The model is not valid</value>
+  </data>
+  <data name="notDefined" xml:space="preserve">
+    <value>{0} not defined</value>
+    <comment>Name in parameter</comment>
+  </data>
+  <data name="numberGroupNotValid" xml:space="preserve">
+    <value>The number of groups requested is higher than the number of groups possible.</value>
+  </data>
+  <data name="versionNotValid" xml:space="preserve">
+    <value>The version entered is not valid</value>
+  </data>
+  <data name="dataExcelFileUploadFormatError" xml:space="preserve">
+    <value>The uploaded file must have a .xlsx format</value>
+    <comment>Error message for incorrect uploaded file format</comment>
+  </data>
+  <data name="dataPdfFileUploadFormatError" xml:space="preserve">
+    <value>The uploaded file must have a .pdf format</value>
+    <comment>Error message for incorrect uploaded file format</comment>
+  </data>
+  <data name="userNotAllowedToUpdate" xml:space="preserve">
+    <value>You are not allowed to update the user</value>
+    <comment>Error message when a user is not an administrator of the entity of the user that is updated</comment>
+  </data>
+  <data name="dataUpdateErrorRightsDependency" xml:space="preserve">
+    <value>You cannot grant {0} rights if {1} is not selected</value>
+    <comment>Error message when a user update application rights without checkin the mandatory right</comment>
+  </data>
+  <data name="dataUpdateErrorRightNbUser" xml:space="preserve">
+    <value>you cannot define more than {0} validated users as {1}</value>
+    <comment>Error message when a user add more rights than the ones expected for specific rights</comment>
+  </data>
+  <data name="dataForbiddenSuperiorInferiorCharaters" xml:space="preserve">
+    <value>Characters '&lt;' and '&gt;' are not allowed</value>
+    <comment>Prevent HTML injection</comment>
+  </data>
+  <data name="updateBaseErrorMessage" xml:space="preserve">
+    <value>Unable to update the {0}: {1}</value>
+    <comment>Error message when an error occured during the mys update {0} = the object to be update (user or company), {1} = the error that occured</comment>
+  </data>
+  <data name="acknowledgmentSuccess" xml:space="preserve">
+    <value>All the selected documents have been acknowledged</value>
+    <comment>Success Message when all documents have been acknowledged</comment>
+  </data>
+  <data name="dataErrorRemoveUserFromGroupAD" xml:space="preserve">
+    <value>Unable to remove user from {0} group in the AD. Unable to update user.</value>
+    <comment>Error when a user can't be added to the AD Group of the Business Type</comment>
+  </data>
+  <data name="dataErrorAddUserToGroupAD" xml:space="preserve">
+    <value>Unable to add user to {0} group in the AD. Unable to update user.</value>
+    <comment>Error when a user can't be added to the AD Group of the Support Center</comment>
+  </data>
+  <data name="dataUpdateUserAD" xml:space="preserve">
+    <value>Unable to update user's informations in AD</value>
+    <comment>Error when user's informations can't be updated in AD.</comment>
+  </data>
+  <data name="dataGetSearchError" xml:space="preserve">
+    <value>Unable to find the search form for {0}</value>
+    <comment>Error message raised while trying to get the search form</comment>
+  </data>
+  <data name="dataSearchError" xml:space="preserve">
+    <value>Unable to search data for {0}</value>
+    <comment>Error message raised when an error occured during the search</comment>
+  </data>
+  <data name="dataUploadSuccess" xml:space="preserve">
+    <value>Data uploaded with success</value>
+    <comment>Message displayed when data have been successfully uploaded</comment>
+  </data>
+  <data name="dataUploadError" xml:space="preserve">
+    <value>Unable to upload data for {0}</value>
+    <comment>Error message when an error occurs while uploading data</comment>
+  </data>
+  <data name="excelFormatError" xml:space="preserve">
+    <value>The uploaded file must have an excel file format (.xls or .xlsx)</value>
+    <comment>Error message when the file uploaded is not an excel file format</comment>
+  </data>
+  <data name="isOnlyWhiteSpaceError" xml:space="preserve">
+    <value>No only white space allowed</value>
+    <comment>Error when data contains only whitespaces</comment>
+  </data>
+  <data name="dataIncorrectFormat" xml:space="preserve">
+    <value>The {0} is incorrect</value>
+  </data>
+</root>

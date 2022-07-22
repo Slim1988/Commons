@@ -1,0 +1,19 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/ATR.Common.Controllers/bin
+/ATR.Common.Controllers/obj
+/ATR.Common.Enumerations/bin
+/ATR.Common.Enumerations/obj
+/ATR.Common.Extensions/bin
+/ATR.Common.Extensions/obj
+/ATR.Common.Helpers/bin
+/ATR.Common.Helpers/obj
+/ATR.Common.Logging/bin
+/ATR.Common.Logging/obj
+/ATR.Common.Models/bin
+/ATR.Common.Models/obj
+/ATR.Common.Ressources/bin
+/ATR.Common.Ressources/obj
+/.vs/Commons/v17

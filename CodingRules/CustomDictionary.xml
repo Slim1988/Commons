@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Dictionary>
+  <Words>
+    <Unrecognized>
+    </Unrecognized>
+    <Recognized>
+      <!-- Authorized value for ATRactive word used in all solution. -->
+      <Word>Ractive</Word>
+      <!-- Authorized value: could be written in two words, in one word and also with an hyphen. -->
+      <Word>SecondHand</Word>
+    </Recognized>
+    <Deprecated>
+    </Deprecated>
+    <Compound>
+    </Compound>
+    <DiscreteExceptions>
+    </DiscreteExceptions>
+  </Words>
+  <Acronyms>
+    <CasingExceptions>
+      <!-- Acronym for "Active Directory" -->
+      <Acronym>AD</Acronym>
+      <!-- Acronym for "Aircraft Delivery Information Services" -->
+      <Acronym>ADIS</Acronym>
+      <!-- Acronym for "Avions de transport régional" (French) or "Aerei da Trasporto Regionale" (Italian) -->
+      <Acronym>ATR</Acronym>
+      <!-- Acronym for "Customer Relationship Management" -->
+      <Acronym>CRM</Acronym>
+      <!-- Acronym for "Lightweight Directory Access Protocol" -->
+      <Acronym>LDAP</Acronym>
+      <!-- Acronym for "Model Serial Number" -->
+      <Acronym>MSN</Acronym>
+      <!-- Acronym for "Uniform Resource Locator" -->
+      <Acronym>URL</Acronym>
+    </CasingExceptions>
+  </Acronyms>
+</Dictionary>

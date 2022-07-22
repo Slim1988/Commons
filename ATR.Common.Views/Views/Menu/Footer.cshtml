@@ -1,0 +1,100 @@
+﻿@using System.Collections.Specialized
+@using System.Configuration
+
+@{
+    // Get the display section in app Settings
+    NameValueCollection urlSettings = ConfigurationManager.GetSection("urls") as NameValueCollection;
+    string cdnBaseUrl = urlSettings["CDN"];
+}
+
+<div class="footer">
+    <div class="f-form-row">
+        <div class="f-col-3 f-adjust-logo">
+            <span class="f-helper"></span>
+            <img alt="ATR Logo" src="@string.Concat(cdnBaseUrl, "/ATR/images/logo-foot-resized-cropped.png")">
+        </div>
+        <div class="f-col-6 f-center f-color-white">
+            <span class="f-helper"></span>
+                <a target="_blank" href="@urlSettings["ATRactivePortal"]/Lists/Frequently%20Asked%20Questions/AllItems.aspx">FAQ</a> |
+                <a target="_blank" href="@urlSettings["ATRactivePortal"]/SitePages/Footer/Terms-&-Conditions.aspx">Terms & Conditions</a> |
+                <a target="_blank" href="http://www.atraircraft.com/">Corporate WebSite</a>
+        </div>
+        <div class="f-col-3 f-adjust-icons">
+            <span class="f-helper"></span>
+            <a target="_blank" href="https://www.facebook.com/atraircraft/" title="facebook">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/user/ATRbroadcast" title="youtube">
+                <i class="fa fa-youtube-play"></i>
+            </a>
+            <a target="_blank" href="https://twitter.com/ATRaircraft" title="twitter">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/atraircraft/" title="instagram">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/company/atr_388974" title="linkedin">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Start script for Quadran statistic's purpose -->
+<script type="text/javascript" src="@string.Concat(cdnBaseUrl, "/ATR/js/crud.js?v=")"></script>
+<script src="https://tracker.quadran.eu/qfa_combined.js" type="text/javascript"></script>
+<script src="https://tracker.quadran.eu/qa-combined.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var pageTitle = document.getElementsByTagName("title")[0].innerHTML;
+    if (pageTitle.toLowerCase().indexOf('error') == -1 && pageTitle.toLowerCase().indexOf('loading') == -1)
+    {
+        if (typeof QFATracker != "undefined")
+        {
+            QFATracker.activate('#QUADRANKEY');
+        }
+        else
+        {
+            $.ajax({
+                url: "@urlSettings["CurrentApp"]/Menu/LogClientError",
+                type: "post",
+                dataType: "json",
+                data: { message: "error while loading QFATracker" },
+                success: function (data) {
+                },
+                error: function (data) {
+                }
+            });
+        }
+
+        if (typeof QWATracker != "undefined")
+        {
+            $.ajax({
+                url: "@urlSettings["CurrentApp"]/Menu/GetappYuserInformation",
+                type: "get",
+                dataType: "json",
+                success: function (data) {
+                    QWATracker.group = data.entity;
+                    QWATracker.group2 = data.businessType;
+                    QWATracker.group3 = data.userId;
+                    QWATracker.activate('#QUADRANKEY');
+                },
+                error: function (data) {
+                }
+            });
+        }
+        else
+        {
+            $.ajax({
+                url: "@urlSettings["CurrentApp"]/Menu/LogClientError",
+                type: "post",
+                dataType: "json",
+                data: { message: "error while loading QWATracker" },
+                success: function (data) {
+                },
+                error: function (data) {
+                }
+            });
+        }
+    }
+</script>
+<!-- End script for Quadran statistic's purpose -->

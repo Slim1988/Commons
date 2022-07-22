@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="339f41f127f6440a89225f329d1fd51d" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="Models.APPLICATION" Width="1.5" PointX="6" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.APPLICATION_CATEGORY" Width="1.5" PointX="3.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.BUSINESS_TYPE" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.CONTACT_TYPE" Width="1.5" PointX="3.75" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.CONTACTS_ATR" Width="1.5" PointX="6" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.COUNTRY" Width="1.5" PointX="0.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.CRM_ATA" Width="1.5" PointX="3.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.CRM_CPY_SUPPORT_CENTER" Width="1.5" PointX="5.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.CRM_MSN" Width="1.5" PointX="5.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.CRM_PORTAL_MANAGEMENT" Width="1.5" PointX="7.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.CRM_PORTAL_MESSAGES" Width="1.5" PointX="8.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.CURRENCIES" Width="1.5" PointX="0.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ENTITES_NEW_APPLICATIONS" Width="1.5" PointX="5.25" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ENTITES_RIGHTS" Width="1.5" PointX="5.25" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ENTITES_WAREHOUSE" Width="1.5" PointX="5.25" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ENTITY" Width="1.5" PointX="3" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ENTITY_APPLICATION" Width="1.5" PointX="8.25" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ENTITY_APPLICATION_ACCESS" Width="1.5" PointX="8.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ENTITY_CONTACTS_ATR" Width="1.5" PointX="8.25" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.FREQUENCIES" Width="1.5" PointX="11.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.HISTO_LOGIN_USERS" Width="1.5" PointX="9.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.JOB_PROFIL" Width="1.5" PointX="9" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.NOTIFICATIONS" Width="1.5" PointX="11.25" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.PARAMETERS" Width="1.5" PointX="10.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.RIGHT_LEVELS" Width="1.5" PointX="1.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.RIGHTS" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.SUBSCRIBE" Width="1.5" PointX="13.5" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.SUPPORT_CENTER" Width="1.5" PointX="0.75" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.TRAINING_CENTER" Width="1.5" PointX="0.75" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.USERS" Width="1.5" PointX="11.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.USERS_NEW_APPLICATIONS" Width="1.5" PointX="13.5" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.USERS_RIGHTS" Width="1.5" PointX="13.5" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.WAREHOUSES" Width="1.5" PointX="3" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ACS_PDF_FILE" Width="1.5" PointX="11.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ACS_ZONE2" Width="1.5" PointX="13.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.GSE_ZONE" Width="1.5" PointX="13.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.vw_extract_administrators_entity" Width="1.5" PointX="15.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.vw_extract_applications_columns" Width="1.5" PointX="15.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.vw_extract_applications_entity" Width="1.5" PointX="15.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.vw_extract_contacts_entity" Width="1.5" PointX="15.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.vw_extract_new_applications_entity" Width="1.5" PointX="15.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.vw_extract_new_applications_entity_columns" Width="1.5" PointX="17.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.vw_extract_new_applications_user" Width="1.5" PointX="17.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.vw_extract_new_applications_user_columns" Width="1.5" PointX="17.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.vw_extract_request_warranty_notification_user" Width="1.5" PointX="17.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.vw_extract_warehouse_entity" Width="1.5" PointX="17.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.vw_extract_warehouse_types" Width="1.5" PointX="17.75" PointY="16.875" IsExpanded="true" />
+        <AssociationConnector Association="Models.FK_APPLICAT_APPLICATI_APPLICAT" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ENTITY_A_ENTITY_AP_APPLICAT" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ENTITY_A_ENTITY_AP_APPLICAT2" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ENTITY_ENTITY_BU_BUSINESS" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_CONTACTS_CONTACT_T_CONTACT_" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ENTITY_C_ENTITY_CO_CONTACTS" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ENTITY_ENTITY_CO_COUNTRY" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_USERS_USERS_COU_COUNTRY" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ENTITY_CURRENCIES" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK__ENTITES_N__FK_EN__1F98B2C1" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK__ENTITES_R__FK_EN__2180FB33" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK__ENTITES_R__FK_RI__22751F6C" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK__ENTITES_W__FK_EN__245D67DE" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK__ENTITES_W__FK_WA__236943A5" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ENTITY_A_ENTITY_AP_ENTITY" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ENTITY_A_ENTITY_AP_ENTITY2" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ENTITY_C_ENTITY_CO_ENTITY" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ENTITY_CENTRE_EN_SUPPORT_" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ENTITY_ENTITY_TR_TRAINING" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_USERS_ENTITY_US_ENTITY" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_FREQUENCIES" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_USERS_USERS_JOB_JOB_PROF" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_NOTIFICATIONS" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK__USERS_RIG__FK_RI__2EDAF651" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_USERS" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK__USERS_NEW__FK_US__2DE6D218" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK__USERS_RIG__FK_US__2FCF1A8A" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Models.BUSINESS_TYPE_MENUS" Width="1.5" PointX="3.75" PointY="0.625" />
+        <EntityTypeShape EntityType="Models.MENUS" Width="1.5" PointX="1.75" PointY="31.125" />
+        <AssociationConnector Association="Models.FK_BUSINNESS_TYPE_MENU" />
+        <AssociationConnector Association="Models.FK_MENU_BUSINESS_TYPE" />
+        <EntityTypeShape EntityType="Models.APPLICATIONS_MESSAGES" Width="1.5" PointX="16.375" PointY="19.75" />
+        <EntityTypeShape EntityType="Models.NEW_APPLICATIONS" Width="1.5" PointX="0.5" PointY="3.5" />
+        <AssociationConnector Association="Models.FK_APPLICATION_CATEGORY" />
+        <AssociationConnector Association="Models.FK__ENTITES_N__FK_NE__208CD6FA" />
+        <AssociationConnector Association="Models.FK_NEW_APPLICATIONS" />
+        <AssociationConnector Association="Models.FK__NOTIFICAT__FK_NE__282DF8C2" />
+        <AssociationConnector Association="Models.FK__USERS_NEW__FK_NE__2CF2ADDF" />
+        <AssociationConnector Association="Models.FK_RIGHT_LEVEL" />
+        <AssociationConnector Association="Models.FK_RIGHTS_NEW_APPLICATIONS" />
+        <EntityTypeShape EntityType="Models.ENTITY_TCU" Width="1.5" PointX="8.25" PointY="24.625" />
+        <EntityTypeShape EntityType="Models.TCU" Width="1.5" PointX="6" PointY="29.625" />
+        <AssociationConnector Association="Models.FK_ENTITY_TCU_ENTITY" />
+        <AssociationConnector Association="Models.FK_ENTITY_TCU_TCU" />
+        <EntityTypeShape EntityType="Models.CGV" Width="1.5" PointX="3" PointY="34.375" />
+        <EntityTypeShape EntityType="Models.ENTITY_CGV" Width="1.5" PointX="5.25" PointY="21.625" />
+        <AssociationConnector Association="Models.FK_ENTITY_CGV_CGV" />
+        <AssociationConnector Association="Models.FK_ENTITY_CGV_ENTITY" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
